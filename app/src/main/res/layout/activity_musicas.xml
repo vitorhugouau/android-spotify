@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/brown"
     tools:context=".Musicas"
     android:orientation="vertical"
     >
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="66dp"
-        android:background="@color/blue"
+        android:background="@color/brown"
         android:orientation="vertical">
 
         <LinearLayout
@@ -43,10 +43,11 @@
                 android:layout_marginLeft="10dp" />
 
             <Button
+                android:onClick="btnPlaylists"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#1F1F1F"
-                android:text="Podcasts"
+                android:text="Playlists"
                 android:textColor="@android:color/white"
                 android:layout_marginLeft="10dp" />
         </LinearLayout>
@@ -67,14 +68,14 @@
             android:layout_gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:text="O Menino Que Queria Ser Deus"/>
+            android:text="My Beautiful Dark Twisted Fantasy"/>
 
         <ImageView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:src="@mipmap/albumd"
+            android:src="@mipmap/kenye_foreground"
             />
 
         <TextView
@@ -84,7 +85,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:textSize="20sp"
-            android:text="Solto"/>
+            android:text="Runaway"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -93,7 +94,7 @@
             android:layout_gravity="center"
 
             android:textSize="13sp"
-            android:text="Djonga,Hot,Coyote Beatz"/>
+            android:text="Kanye West, Pusha T"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,7 +108,7 @@
                 android:layout_height="wrap_content"
                 app:icon="@mipmap/setaesquerda_foreground"
                 app:iconSize="50sp"
-                android:backgroundTint="@color/blue"
+                android:backgroundTint="@color/brown"
                 />
 
             <Button
@@ -115,7 +116,7 @@
                 android:layout_height="wrap_content"
                 app:icon="@mipmap/pause_foreground"
                 app:iconSize="50sp"
-                android:backgroundTint="@color/blue"
+                android:backgroundTint="@color/brown"
                 />
 
             <Button
@@ -123,7 +124,7 @@
                 android:layout_height="wrap_content"
                 app:icon="@mipmap/setadireita_foreground"
                 app:iconSize="50sp"
-                android:backgroundTint="@color/blue"
+                android:backgroundTint="@color/brown"
                 />
         </LinearLayout>
 
@@ -136,7 +137,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0:00"
+                android:text="0:30"
                 android:layout_marginRight="5dp"
                 />
 

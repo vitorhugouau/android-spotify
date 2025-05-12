@@ -68,7 +68,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#1F1F1F"
-                android:text="Podcasts" />
+                android:text="Playlists" />
 
         </LinearLayout>
 
@@ -93,49 +93,57 @@
                 android:paddingBottom="10dp">
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:scaleType="centerCrop"
+                    android:layout_width="90dp"
+                    android:layout_height="84dp"
                     android:layout_margin="5dp"
-                    android:src="@mipmap/albumd" />
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/kenye_foreground" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:text="Djonga"
+                    android:text="Kanye West"
                     android:textColor="@color/white"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <!-- Card 2 -->
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="109dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
-                android:orientation="horizontal"
                 android:background="@drawable/fundo_card"
                 android:backgroundTint="#181816"
+                android:orientation="horizontal"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:src="@mipmap/albumcbj" />
+                <LinearLayout
+                    android:layout_width="103dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-10dp"
+                    >
 
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/eminem_foreground" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:text="Charlie Brown Jr."
+                    android:text="Eminem"
                     android:textColor="@color/white"
-                    android:textSize="24sp"
+                    android:textSize="19sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -150,19 +158,19 @@
                 android:backgroundTint="#181816">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_margin="5dp"
-                    android:src="@mipmap/albuml" />
+                    android:src="@mipmap/drake_foreground" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:text="Lagum"
+                    android:text="Drake"
                     android:textColor="@color/white"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -177,19 +185,19 @@
                 android:backgroundTint="#181816">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_margin="5dp"
-                    android:src="@mipmap/albumbk" />
+                    android:src="@mipmap/kendrick_foreground" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:text="BK"
+                    android:text="Kendrick Lamar"
                     android:textColor="@color/white"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 

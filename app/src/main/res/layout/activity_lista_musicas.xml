@@ -1,129 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".ListaMusicas"
-    android:orientation="vertical"
-    >
-
-  <LinearLayout
-
-    android:onClick="linearCBJ"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:background="@drawable/fundo_card"
-    android:backgroundTint="#00a8ff"
-    android:orientation="horizontal"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp">
-
-    ```
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:src="@mipmap/albumd" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:text="Djonga"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-</LinearLayout>
+    tools:context=".ListaFixa">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/fundo_card"
-        android:backgroundTint="#181816"
-        android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        tools:ignore="OnClick">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_spotify_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Spotify"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_marginLeft="-20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="btnTudo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tudo"
+                android:backgroundTint="#1F1F1F" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#1F1F1F"
+                android:onClick="btnMusicas"
+                android:text="Músicas" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#1ED760"
+                android:textColor="#000000"
+                android:text="Playlists" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:onClick="linearCBJ"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:src="@mipmap/albumcbj" />
+            android:background="@drawable/fundo_card"
+            android:backgroundTint="#DB7093"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@mipmap/graduation" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="Flashing Lights"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:text="Kanye West, Dwele"
+                    android:textColor="#C0C0C0"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:text="Charlie Brown Jr."
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:background="@drawable/fundo_card"
+            android:backgroundTint="#DB7093"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@mipmap/graduation" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="Can't Tell Me Nothing"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:text="Kanye West"
+                    android:textColor="#C0C0C0"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/fundo_card"
+            android:backgroundTint="@color/blue"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@mipmap/jesus" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="God I0s"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:text="Kanye West"
+                    android:textColor="#C0C0C0"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/fundo_card"
+            android:backgroundTint="#34447A"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:src="@mipmap/donda" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="Moon"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="1dp"
+                    android:text="Kanye West"
+                    android:textColor="#C0C0C0"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/fundo_card"
-        android:backgroundTint="#C3BA99"
-        android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:src="@mipmap/albuml" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:text="Lagum"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/fundo_card"
-        android:backgroundTint="#34447A"
-        android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:src="@mipmap/albumbk" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:text="BK"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-    ```
-
-
-
-</LinearLayout>
+</ScrollView>
