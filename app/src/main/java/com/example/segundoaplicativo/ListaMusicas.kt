@@ -25,4 +25,11 @@ class ListaMusicas : AppCompatActivity() {
         startActivity(intent)
         overridePendingTransition(0, 0)
     }
+
+    fun flashing(view: View){
+        var intent = Intent(this, musicaFlashing::class.java)
+        startActivity(intent)
+        overridePendingTransition(0, 0)
+    }
+
 }

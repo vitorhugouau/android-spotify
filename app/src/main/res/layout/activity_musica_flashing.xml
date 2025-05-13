@@ -6,8 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brown"
-    tools:context=".Musicas"
+    android:background="@color/purple"
+    tools:context=".musicaFlashing"
     android:orientation="vertical"
     >
 
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="66dp"
-        android:background="@color/brown"
+        android:background="@color/purple"
         android:orientation="vertical">
 
         <LinearLayout
@@ -36,7 +36,7 @@
             android:layout_marginTop="-45dp"
             android:padding="16dp"
             android:gravity="center_vertical"
-            android:background="@color/brown">
+            android:background="@color/purple">
 
             <ImageView
                 android:layout_width="74dp"
@@ -60,7 +60,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:gravity="center"
-                    android:text="My Beautiful Dark Twisted Fantasy" />
+                    android:text="Graduation" />
 
             </LinearLayout>
 
@@ -78,7 +78,7 @@
             android:layout_height="279dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:src="@mipmap/kenye_foreground" />
+            android:src="@mipmap/graduation_foreground" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="-20dp"
             android:textSize="20sp"
-            android:text="Runaway"/>
+            android:text="Flashing Lights"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
             android:layout_marginTop="-160dp"
             android:backgroundTint="@color/black"
             android:textColor="@color/white"
-            android:text="Minha Biblioteca"
+            android:text="Lista de Musica"
             />
 
     </LinearLayout>

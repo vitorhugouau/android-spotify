@@ -8,7 +8,7 @@
     android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaFixa">
+    tools:context=".AtividadeAppSpotify">
 
 
     <LinearLayout
@@ -16,61 +16,45 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="86dp"
+                android:layout_height="77dp"
+                android:layout_marginEnd="16dp"
                 android:src="@mipmap/icon_spotify_foreground" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/adlam_display"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Spotify"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:layout_marginLeft="-20dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal">
-
             <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-20dp"
                 android:backgroundTint="#1ED760"
                 android:text="Tudo"
                 android:textColor="#000000" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#1F1F1F"
                 android:onClick="btnMusicas"
                 android:text="Músicas" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#1F1F1F"
                 android:text="Playlists" />
 
         </LinearLayout>
+
 
         <GridLayout
             android:layout_width="match_parent"
@@ -83,7 +67,7 @@
             <LinearLayout
                 android:onClick="linearCBJ"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
                 android:orientation="horizontal"
@@ -93,8 +77,8 @@
                 android:paddingBottom="10dp">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="84dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_margin="5dp"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/kenye_foreground" />
@@ -113,7 +97,7 @@
             <!-- Card 2 -->
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="109dp"
+                android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
                 android:background="@drawable/fundo_card"
@@ -123,19 +107,19 @@
                 android:paddingBottom="10dp">
 
                 <LinearLayout
-                    android:layout_width="103dp"
+                    android:layout_width="74dp"
                     android:layout_height="100dp"
-                    android:layout_marginTop="-10dp"
-                    >
+                    android:layout_marginTop="-10dp">
 
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:layout_margin="5dp"
                         android:src="@mipmap/eminem_foreground" />
 
                 </LinearLayout>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -150,7 +134,7 @@
             <!-- Card 3 -->
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
                 android:orientation="horizontal"
@@ -158,8 +142,8 @@
                 android:backgroundTint="#181816">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_margin="5dp"
                     android:src="@mipmap/drake_foreground" />
 
@@ -185,8 +169,8 @@
                 android:backgroundTint="#181816">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="90dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:layout_margin="5dp"
                     android:src="@mipmap/kendrick_foreground" />
 
@@ -202,6 +186,78 @@
             </LinearLayout>
 
         </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="180dp"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Feito pra gente"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="153dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="95dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="99dp"
+                    android:src="@mipmap/descoberta" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Runaway"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="99dp"
+                    android:src="@mipmap/daily" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Daily Mix 1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
 
 
     </LinearLayout>
