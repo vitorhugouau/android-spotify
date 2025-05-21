@@ -15,14 +15,14 @@ class AtividadeAppSpotify : AppCompatActivity() {
     fun linearCBJ(view: View){
         var intent = Intent(this, Musicas::class.java)
         startActivity(intent)
-        overridePendingTransition(0, 0) // Remove a animação
+        overridePendingTransition(0, 0)
 
     }
 
     fun btnMusicas(view: View){
         var intent = Intent(this, Musicas::class.java)
         startActivity(intent)
-        overridePendingTransition(0, 0) // Remove a animação
+        overridePendingTransition(0, 0)
 
     }
 }

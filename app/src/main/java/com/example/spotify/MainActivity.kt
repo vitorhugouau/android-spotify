@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.spotify.Entrar
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun AtividadeAppMusica(view:View){
-        var intent = Intent(this, AtividadeAppSpotify::class.java)
+        var intent = Intent(this, Entrar::class.java)
         startActivity(intent)
 
     }
