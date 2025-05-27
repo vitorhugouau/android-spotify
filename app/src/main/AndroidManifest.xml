@@ -15,6 +15,18 @@
         android:theme="@style/Theme.SegundoAplicativo"
         tools:targetApi="31">
         <activity
+            android:name="com.example.spotify.maquina"
+            android:exported="false" />
+        <activity
+            android:name="com.example.spotify.config"
+            android:exported="false" />
+        <activity
+            android:name="com.example.spotify.navbar"
+            android:exported="false" />
+        <activity
+            android:name=".navbar"
+            android:exported="false" />
+        <activity
             android:name="com.example.spotify.Premium"
             android:exported="false" />
         <activity

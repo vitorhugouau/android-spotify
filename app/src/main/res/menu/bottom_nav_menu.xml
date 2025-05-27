@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/ic_home3_foreground"
+        android:title="Início" />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@mipmap/ic_search_foreground"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@mipmap/ic_library2_foreground"
+        android:title="Sua Biblioteca" />
+    <item
+        android:id="@+id/nav_premium"
+        android:icon="@mipmap/ic_premium_foreground"
+        android:title="Premium" />
+</menu>
