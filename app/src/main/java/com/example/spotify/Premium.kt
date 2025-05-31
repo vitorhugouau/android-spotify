@@ -33,7 +33,8 @@ class Premium : AppCompatActivity() {
                     true
                 }
                 R.id.nav_search -> {
-                    Toast.makeText(this, "Buscar clicado", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, buscar::class.java))
+                    overridePendingTransition(0, 0)
                     true
                 }
                 R.id.nav_library -> {

@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.example.spotify.Premium
+import com.example.spotify.buscar
 import com.example.spotify.navbar
 
 class AtividadeAppSpotify : AppCompatActivity() {
@@ -26,7 +27,8 @@ class AtividadeAppSpotify : AppCompatActivity() {
                     true
                 }
                 R.id.nav_search -> {
-                    Toast.makeText(this, "Buscar clicado", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, buscar::class.java))
+                    overridePendingTransition(0, 0)
                     true
                 }
                 R.id.nav_library -> {

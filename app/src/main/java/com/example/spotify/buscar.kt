@@ -1,22 +1,22 @@
-package com.example.segundoaplicativo
+package com.example.spotify
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.spotify.Premium
-import com.example.spotify.buscar
+import com.example.segundoaplicativo.AtividadeAppSpotify
+import com.example.segundoaplicativo.ListaMusicas
+import com.example.segundoaplicativo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ListaMusicas : AppCompatActivity() {
+class buscar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_musicas)
-
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_buscar)
+        // --- Bottom Navigation ---
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         bottomNav.setOnItemSelectedListener { item ->
@@ -27,11 +27,11 @@ class ListaMusicas : AppCompatActivity() {
                     true
                 }
                 R.id.nav_search -> {
-                    startActivity(Intent(this, buscar::class.java))
-                    overridePendingTransition(0, 0)
                     true
                 }
                 R.id.nav_library -> {
+                    startActivity(Intent(this, ListaMusicas::class.java))
+                    overridePendingTransition(0, 0)
                     true
                 }
                 R.id.nav_premium -> {
@@ -42,24 +42,6 @@ class ListaMusicas : AppCompatActivity() {
                 else -> false
             }
         }
-    }
 
-    fun btnTudo(view: View){
-        var intent = Intent(this, AtividadeAppSpotify::class.java)
-        startActivity(intent)
-        overridePendingTransition(0, 0)
     }
-
-    fun btnMusicas(view: View){
-        var intent = Intent(this, Musicas::class.java)
-        startActivity(intent)
-        overridePendingTransition(0, 0)
-    }
-
-    fun flashing(view: View){
-        var intent = Intent(this, musicaFlashing::class.java)
-        startActivity(intent)
-        overridePendingTransition(0, 0)
-    }
-
 }
