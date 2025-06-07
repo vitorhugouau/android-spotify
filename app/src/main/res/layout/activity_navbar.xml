@@ -27,6 +27,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/btnSpotify"
                     android:layout_width="90dp"
                     android:layout_height="84dp"
                     android:src="@mipmap/icon_spotify_foreground" />

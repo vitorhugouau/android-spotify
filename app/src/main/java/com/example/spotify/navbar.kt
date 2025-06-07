@@ -2,11 +2,13 @@ package com.example.spotify
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.segundoaplicativo.AtividadeAppSpotify
 import com.example.segundoaplicativo.R
 
 class navbar : AppCompatActivity() {
@@ -25,6 +27,11 @@ class navbar : AppCompatActivity() {
 
         textMaquina.setOnClickListener {
             val intent = Intent(this, maquina::class.java)
+            startActivity(intent)
+        }
+        val btnSpotify = findViewById<ImageView>(R.id.btnSpotify)
+        btnSpotify.setOnClickListener {
+            val intent = Intent(this, AtividadeAppSpotify::class.java)
             startActivity(intent)
         }
         }

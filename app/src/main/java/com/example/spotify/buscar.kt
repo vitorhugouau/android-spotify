@@ -2,12 +2,14 @@ package com.example.spotify
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.segundoaplicativo.AtividadeAppSpotify
 import com.example.segundoaplicativo.ListaMusicas
+import com.example.segundoaplicativo.Musicas
 import com.example.segundoaplicativo.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -42,6 +44,12 @@ class buscar : AppCompatActivity() {
                 else -> false
             }
         }
+        val imgMusica = findViewById<ImageView>(R.id.imgMusica)
+        imgMusica.setOnClickListener {
+            val intent = Intent(this, pesquisamusica::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
