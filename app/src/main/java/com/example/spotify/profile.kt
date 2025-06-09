@@ -9,12 +9,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.segundoaplicativo.R
 
-class config : AppCompatActivity() {
+class profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_config)
+        setContentView(R.layout.activity_profile)
         val btnBack = findViewById<ImageView>(R.id.btnBack)
+
         btnBack.setOnClickListener {
             val intent = Intent(this, navbar::class.java)
             startActivity(intent)

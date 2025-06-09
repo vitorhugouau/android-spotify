@@ -16,6 +16,21 @@ class navbar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_navbar)
+
+        val verPerfil = findViewById<TextView>(R.id.tvVerPerfil)
+
+        verPerfil.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
+            startActivity(intent)
+        }
+
+        val btnRecentes = findViewById<ImageView>(R.id.btnRecentes)
+        btnRecentes.setOnClickListener {
+            val intent = Intent(this, recentes::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         val textConfig = findViewById<TextView>(R.id.textConfig)
 
         textConfig.setOnClickListener {
